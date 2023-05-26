@@ -63,6 +63,8 @@ class Course(models.Model):
     total_enrollment = models.IntegerField(default=0)
     is_enrolled = False
 
+    """ title = models.CharField(max_length=1000, default="Onlinecourse") """
+
     def __str__(self):
         return "Name: " + self.name + "," + \
                "Description: " + self.description
